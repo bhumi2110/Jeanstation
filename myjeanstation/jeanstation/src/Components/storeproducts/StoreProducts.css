@@ -1,0 +1,79 @@
+/* Container for the entire product grid */
+.productcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adds spacing between product cards */
+  justify-content: space-evenly;
+}
+/* Each product card */
+.product-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures content like image, title, and button are spaced out */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 250px; /* Control card width */
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Make sure images are consistent */
+.product-item img {
+  max-width: 100%; /* Ensure the image fits inside the card */
+  height: auto;
+  object-fit: cover; /* Maintain aspect ratio of images */
+  border-radius: 8px;
+}
+
+/* Card content styling */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.card-text {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* Align button at the bottom of the card */
+.btn-primary {
+  margin-top: auto;
+  width: 100%; /* Full-width button */
+}
+
+/* Styling the search bar */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-bar button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #0056b3;
+}

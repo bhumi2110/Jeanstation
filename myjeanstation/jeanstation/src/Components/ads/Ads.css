@@ -1,0 +1,51 @@
+.carousel-container {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .carousel-container img {
+    width: 50%;
+    height: auto;
+display: block;
+margin:0 auto;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #000;
+  }
+  
+  .carousel-control-prev {
+    left: 210px;
+  }
+  
+  .carousel-control-next {
+    right: 210px;
+  }
+  
+  .fade-enter {
+    opacity: 0;
+  }
+  
+  .fade-enter-active {
+    opacity: 1;
+    transition: opacity 500ms;
+  }
+  
+  .fade-exit {
+    opacity: 1;
+  }
+  
+  .fade-exit-active {
+    opacity: 0;
+    transition: opacity 500ms;
+  }
+   

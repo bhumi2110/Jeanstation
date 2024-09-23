@@ -1,0 +1,28 @@
+.cardcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    padding: 20px; 
+    justify-content: center; 
+}
+
+.product-card {
+    background-color: #f9f9f9; 
+    border: 3px solid #ddd; 
+    border-radius: 8px; 
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 200px;
+    text-align: center; 
+    transition: transform 0.2s; 
+    margin: 5px;
+}
+
+.product-card:hover {
+    transform: scale(1.05); 
+}
+
+.product-card img {
+    margin-top: 10px; 
+    border-radius: 50%;
+}
